@@ -1,0 +1,287 @@
+ /*The use of external CSS in our website allows us to separate and manage styles in a .css file making it easier to maintain*/
+ .headcolor{
+    background-color: #F8FAE5;
+    box-shadow: 20px 20px 36px rgb(0, 0, 0, .2);
+    }
+
+.allignment{
+    
+    
+    display: flex;
+    align-items: center;
+    gap:300px;
+   
+    
+    }
+
+.allignment img{
+    width: 75px;
+    height: 75px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 35px;
+    padding-right: 30px;
+    }
+   
+ /* Navigation bar styling class */ 
+.headalign :hover{        /*hover effect added on the nav bar div class*/
+    text-align: left;
+    text-decoration: underline;
+    }
+
+.headalign il{
+    padding-left: 25px;
+    padding-right: 15px;
+    text-align: left;
+    font-size: 25px;
+    
+    
+    }
+/*Navigation title,internal linked content style */
+.bob{
+    
+    padding-top: 1px;
+    padding-bottom: 2px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 5px;
+    border: 2px solid black;
+    color: black;
+    text-decoration: none; /* To remove the default underline on links */
+}
+
+.current {
+    background-color: #C3E2C2; /* Add a background color to indicate the current page */
+    color: #201717; /* Change the text color for better visibility */
+}
+
+
+.lol{
+    
+    color: #B7999C ;
+    text-align: left;
+    padding-left: 40px;
+    transform: 2s;
+    box-shadow: 30px 20px 20px 30px rgb(0, 0, 0, .2);
+    padding-bottom: 20px;
+    
+    }
+    
+.lol h1{
+    font-size: 45px;
+    }
+    
+.lol p{
+    font-size: 20px;
+    }
+    
+.lol button{     /*loginin page button sttyled present in lol class*/
+    font-size: 30px;
+    height: 60px;
+    width: 130px;
+    box-shadow: 10px 10px 16px rgb(0, 0, 0, .2);
+    border: 2px solid;
+    border-radius: 20px;
+    background-color: #FFFFDD;
+    
+    }
+    
+.lol button:hover{
+    transform: scale(1.1);
+    z-index: 2;
+    }
+ /*Styling of the main highlight part of the homepage,the best selling products */
+.productdisplay{
+        background-color: #F8FAE5;
+        box-shadow: 20px 20px 36px rgb(0, 0, 0, .2);
+
+    }    
+
+.seller{
+    allign: left;
+    padding-left: 80px;
+    padding-top: 20px;
+    color: black;
+    font-size: 25px;
+    
+    }
+
+.printerimg{
+    display: flex;
+    gap: 65px;
+    height: 140px;
+    width: 190px;
+    padding-left: 70px;
+    padding-bottom: 590px;
+    }
+
+.pricealign{
+    text-align: center;
+    color: B2A59B;
+    font-size: 19px;
+    border: 3px solid;
+    padding-bottom: 680px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 35px;
+    transition: transform 0.25s;
+    
+    }
+/*image hover effect is added to make the design of the website more responsive and engaging */ 
+.pricealign img:hover{
+    transform: scale(1.1);
+    z-index: 6;
+    
+    }
+    
+.pricealign button{
+    background-color: #C3E2C2;
+    border: 2px solid;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, .2);
+    border-radius: 45px;
+    height: 29px;
+    width: 77px;
+    font-size: 14px;
+    }    
+
+.offer{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    padding-bottom: 40px;
+    transition: 2s;
+    }
+
+.offer button{
+    text-align: center;
+    font-size: 50px;
+    height: 120px;
+    width: 300px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, .2);
+    border-radius: 25px;
+
+    }
+    
+.offer button:hover{
+    transform: scale(1.1);
+    z-index: 2;
+    }
+ /* style class for the footer section of our website*/
+.footersecstyle{
+    background-color: black;
+    padding-left: 30px;
+    font-size: 18.8px;
+    padding-top: 7px;
+    box-shadow: 20px 25px 26px rgb(0, 0, 0, .2);
+    text-align: center;
+    }
+
+.footercolor{
+    color: white;
+    margin: 15px 15pxpx;
+    font-size: 35px;
+    }   
+
+.footercolor2{
+    color: white;
+    margin: 15px 15pxpx;
+    font-size: 19px;
+    }
+
+.footercolor3{
+	color: white;
+	text-align: left;
+}
+
+.column{
+	float: left;
+	width: 30.33%;
+	padding: 10px;
+	height: 220px;
+}
+
+.footercolor3:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+@media screen and (max-width: 600px){
+	.column{
+		width: 100%;
+	}
+}
+
+.logofont a{
+    padding-top: 20px;
+    width: 80px;
+    height: 80px;
+    line-height: 64px;
+    font-size: 33px;
+    align-content: center;
+    
+    }
+
+.lastalign{
+    text-align: center;
+    }
+    
+.lastalign h1{
+    color: white;
+    padding-bottom: 40px;
+    text-align: center;
+    }
+ /*Styling of the research page of our website - Use of external css to style research page */ 
+.researchHead{
+    text-align: center;
+    font-size: 45px;
+}
+
+.researchAm{
+    text-align: center;
+    box-shadow: 30px 20px 20px 30px rgb(0, 0, 0, .2);
+    background-color: #EFECEC;
+    padding-bottom: 20px;
+}
+
+.researchAm h1{
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+.researchAm p{
+    font-size: 20px;
+    padding-bottom: 20px;
+} 
+/*style for the images of research page */
+.researchAm img{
+    height: 400px;
+    width: 800px;
+    box-shadow: 20px 20px 30px rgb(0, 0, 0, .2);
+    border-radius: 25px;
+    padding-bottom: 25px;
+    padding-top: 20px;
+}
+   
+    
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+   
+   
+    
+    

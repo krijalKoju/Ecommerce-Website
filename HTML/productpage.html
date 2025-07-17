@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-111e=1">
+    <title>ZV 5 Printers - Products</title>
+    <link rel="stylesheet" href="../CSS/file.css">
+    <link rel="shortcut icon" href="../images/v.png">
+    <link rel="stylesheet" href="research.html">
+    <link rel="stylesheet" href="GroupWork.html">
+    <!--Use of external Css and internal Css-->
+<style>
+    .container{           /*to style the body section of the product page */
+        background-color: #C3E2C2;
+        color: #ffffff;
+        padding: 15px;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        margin-bottom: 15px;
+    }
+    body {
+        background-color: gainsboro; 
+}
+.proheading{              
+    text-align: center;
+}
+/*styles for the product description and individual product card */
+.procontainer{
+    background-color: #F8FAE5;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+
+}
+.productdisplay1{
+    background-color: #F8FAE5;
+    padding: 30px;
+}
+
+.pricealign1+.productdisplay1{
+    display:flex ;
+    justify-content: space-between;
+    padding-top: 20px;
+} 
+.pricealign1{
+    width: 20%;
+    min-width: 175px;
+    text-align: center;
+    font-size: 16px;
+    border: 3px solid;
+    border-radius: 35px;
+    margin: 15px 0;
+    padding:7px 7px 12px;
+    cursor: pointer;
+    box-shadow:20px 20px 30px rgba(0, 0, 0, 0.2) ;
+    transition: 0.2s ;
+    position: relative;
+    padding-bottom: 45px;
+}
+/*Styles for the images inside the pricealign1 class*/
+.pricealign1 img{
+    width: 281px;
+    height: 281px; 
+    border-radius: 20px;
+}
+/*Hover effect added */
+.pricealign1 img:hover{
+transform: scale(1.1);
+z-index: 4;
+
+}
+.pricealign1.desc input{
+    border: 2px solid;
+    border-radius: 25px;
+
+}
+.pricealign1 button{
+background-color: #C3E2C2;
+border: 2px solid;
+drop-shadow: 0 0 20px rgba(0, 0, 0, .1);
+border-radius: 45px;
+height: 29px;
+width: 77px;
+font-size: 14px;
+transition: background-color 0.3s ease;
+}
+.pricealign1 button:hover{
+    background-color: #A1D2A1;
+}
+.pricealign1 a img{
+    width: 35px;
+    height:35px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight:500 ;
+    color: black;
+    border:1px solid #cce7d0;
+    position: absolute;
+    bottom: 10px;
+    right: 12px;
+}
+.pricealign1 h3{
+    font-size: 18px;
+    font-weight: bold;
+    padding-top:3px;
+    margin: 0px;
+    color: darkgray ;
+}
+.pricealign1 h4{
+    padding-top: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0px;
+}
+</style>
+<!--There is also the use of inline Css ,as Inline Css is prioritized 1st and then, the internal css,last in heirarchy is external stylesheet.-->
+</head> 
+<body>
+    <section class="headcolor">
+        <header> <!--use of semantic element-->
+            <div class="allignment">
+                <div>
+                    <img src="../images/logo22.png">
+                </div>
+                <div class="headalign" style="text-align: center;">
+                    <b><a class="bob" href="GroupWork.html">Home</a></b> <!--internal links-->
+                    <b><a class="bob" href="blog1.html">Blog</a></b>
+                    <b><a class="bob current" href="productpage.html">Product</a></b>  <!--current class used to distinguish the currently opened webpage in the nav bar-->
+                    <b><a class="bob" href="research.html">Research</a></b>
+                    <b><a class="bob" href="Aboutus.html">About us</a></b>
+
+                </div>
+            </div>
+        </header>
+    </section>
+    <div class="container"> <em> <a href= "home.html">Home </a> ><a href="product.html"> Products </a></em>
+    </div>
+    <section>
+<!--main contents of the product page-->
+   <div class="procontainer">
+               <div class="proheading" ><h1 style="text-align: center; font-size: 40px;padding: 10px;margin: 0px;">Featured Products (Heavy Discounts !!)</h1></b></div>
+         <div class="procontainer">
+            <!--Product1 -->
+            <div class="pricealign1">
+                <img src="../images/p1.jpg">
+                <div class="desc">
+                <span>Samsung </span>
+                <h3>Ink Jet Printer</h3><br>Print, copy, scan in color, 2-sided prints, photos, mobile/wireless.
+                <div class="star"><p>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;</p></div> <!--Special symbols like star are added without linking any external online sources -->
+                <b>Was:<del> $400.99</del></b><br>
+                <h4>
+                Now: $350.00</h4>
+                Quantity<input type="number" min="1" max="1000" value="1"><br>
+                <a href=# onclick="addToCart()"><img src="../images/cart.png" alt="Add to cart"></a><br> <!--The functionality of Add to cart button is present via the Javascript,in the end of this html page-->
+                <button type="button">Buy now</button></b>
+            </div>
+            </div>
+            <!--Product 2 -->
+             <div class="pricealign1">
+                <img src="../images/p2.jpg">
+                <div class="desc">
+                <span>MFC Corp</span>
+                <h3>All-in-One Printers</h3><br>The Perfect Choice:multiple functions in a single device.
+                <div class="star"><p>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;</p></div>
+                <b>Was:<del> $439.99</del></b><br>
+                <h4>
+                Now: $399.99</h4>
+                Quantity<input type="number" min="1" max="1000" value="1"><br>
+                <a href=# onclick="addToCart()"><img src="../images/cart.png" alt="Add to cart"></a><br>
+                <button type="button">Buy now</button></b>
+            </div>
+            </div>
+            <!--Product 3 -->
+             <div class="pricealign1">
+                <img src="../images/p3.jpg">
+                <div class="desc">
+                <span>Brother </span>
+                <h3>Laser/LED All-in-one</h3><br>Digital Color All-in-One Printer with Laser Quality, Copy, Scan, and Fax.<div class="star"><p>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;</p></div>
+                <b>Was:<del> $529.99</del></b><br>
+                <h4>
+                Now: $499.00</h4>
+                Quantity<input type="number" min="1" max="1000" value="1"><br>
+                <a href=# onclick="addToCart()"><img src="../images/cart.png" alt="Add to cart"></a><br>
+                <button type="button">Buy now</button></b>
+            </div>
+            </div>
+            <!--Product 4 -->
+             <div class="pricealign1">
+                <img src="../images/p4.jpg">
+                <div class="desc">
+                <span>PrintTech</span>
+                <h3>Monochrome Laser Printer</h3><br>Business Printer with Large Paper Capacity, Wireless Networking, and Duplex Printing.
+                <div class="star"><p>&#9733;&#9733;&#9733;&#9733;&#9734;&#9734;</p></div>
+                <b>Was:<del> $600.00</del></b><br>
+                <h4>
+                Now: $579.00</h4>
+                Quantity<input type="number" min="1" max="1000" value="1"><br>
+                <a href=# onclick="addToCart()"><img src="../images/cart.png" alt="Add to cart"></a><br>
+                <button type="button">Buy now</button></b>
+            </div>
+            </div>
+            <!--Product 5 -->
+             <div class="pricealign1">
+                <img src="../images/p5.jpg">
+                <div class="desc">
+                <span>BRO Corp</span>
+                <h3>Wireless Printer</h3><br>Printer with super high yeild replacement catridges.Built-in wireless and Ethernet networking.
+                <div class="star"><p>&#9733;&#9733;&#9733;&#9733;&#9733;&#9734;</p></div>
+                <b>Was:<del> $400.00</del></b><br>
+                <h4>
+                Now: $349.99</h4>
+                Quantity<input type="number" min="1" max="1000" value="1"><br>
+                <a href=# onclick="addToCart()"><img src="../images/cart.png" alt="Add to cart"></a><br>
+                <button type="button">Buy now</button></b>
+            </div>
+            </div>
+            <!--Product 6 -->
+             <div class="pricealign1">
+                <img src="../images/p6.jpg">
+                <div class="desc">
+                <span>TopPrint</span>
+                <h3>Handeheld Printer-Labeler</h3><br>Advanced labelling system with Wifi and USB connectivity.Print laminated Labels for faceplates and cables.
+                <div class="star"><p>&#9733;&#9733;&#9733;&#9733;&#9733;&#9734;</p></div>
+                <b>Was:<del> $200.00</del></b><br>
+                <h4>
+                Now: $131.00</h4>
+                Quantity<input type="number" min="1" max="1000" value="1"><br>
+                <a href=# onclick="addToCart()"><img src="../images/cart.png" alt="Add to cart"></a><br>
+                <button type="button">Buy now</button></b>
+            </div>
+            </div>
+            <!--Product 7 -->
+             <div class="pricealign1">
+                <img src="../images/p7.png">
+                <div class="desc">
+                <span>TopPrint</span>
+                <h3>Mobile Printer</h3><br>Print, copy, scan in color, 2-sided prints, photos, mobile/wireless.
+                <div class="star"><p>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;</p></div>
+                <b>Was:<del> $650.00</del></b><br>
+                <h4>
+                Now: $600.00</h4>
+                Quantity<input type="number" min="1" max="1000" value="1"><br>
+                <a href=# onclick="addToCart()"><img src="../images/cart.png" alt="Add to cart"></a><br>
+                <button type="button">Buy now</button></b>
+            </div>
+            </div>
+            <!--product 8 -->
+             <div class="pricealign1">
+                <img src="../images/p8.png">
+                <div class="desc">
+                <span>PrintTech</span>
+                <h3>Desktop Thermal Printer</h3><br>Connect, Create and Print professional and durable labels via Bluetooth Wireless connectivity.
+                <div class="star"><p>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;</p></div>
+                <b>Was:<del> $310.00</del></b><br>
+                <h4>
+                Now: $299.99</h4>
+                Quantity<input type="number" min="1" max="1000" value="1"><br>
+                <a href=# onclick="addToCart()"><img src="../images/cart.png" alt="Add to cart"></a><br>
+                <button type="button">Buy now</button></b>
+            </div>
+            </div>
+            <!--product 9 -->
+            <div class="pricealign1">
+                <img src="../images/p14.jpg">
+                <div class="desc">
+                <span>Brother DCP L2540DW</span>
+                <h3>Laser Printer</h3><br>
+                - Up to 30ppm print speed.
+                - Automatic 2-sided (duplex) printing.
+                - 35-sheet Automatic Document Feeder (ADF).
+                - 600 x 600 dpi, HQ1200 (2400 x 600 dpi) quality
+                - Wired and Wireless Network + Wi-Fi direct.
+                - Mobile device print and scan capability.
+                <div class="star"><p>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;</p></div>
+                <br>
+                <b>Was:<del> $400.00</del></b><br>
+                <h4>
+                Now: $399.99</h4>
+                Quantity<input type="number" min="1" max="1000" value="1"><br>
+                <a href=# onclick="addToCart()"><img src="../images/cart.png" alt="Add to cart"></a><br>
+                <button type="button">Buy now</button></b>
+            </div>
+        </div>
+            <!--product 10 -->
+            <div class="pricealign1">
+                <img src="../images/p15.jpg">
+                <div class="desc">
+                <span>Brother DCP T420W</span>
+                <h3>3-in-1 Inkjet Color Printer</h3><br>
+                - Simple to use ink tank refill system
+                - 2x Black, 1x Cyan, 1x Magenta and 1x Yellow ink bottles included
+                - Print Speeds of up to 16ipm (images per minute)
+                - Hi-Speed USB 2.0 and Wireless Network
+                - Paper Input of up to 150 Sheet
+                <div class="star"><p>&#9733;&#9733;&#9733;&#9733;&#9733;&#9734;</p></div>
+                <br>
+                <b>Was:<del> $210.00</del></b><br>
+                <h4>
+                Now: $199.99</h4>
+                Quantity<input type="number" min="1" max="1000" value="1"><br>
+                <a href=# onclick="addToCart()"><img src="../images/cart.png" alt="Add to cart"></a><br>
+                <button type="button">Buy now</button></b>
+            </div>
+        </div>
+            <!--product 11 -->
+            <div class="pricealign1">
+                <img src="../images/p16.jpg">
+                <div class="desc">
+                <span>Brother MFC-L5755DW</span>
+                <h3>MLaser Printer</h3><br>
+                - Fast print speeds of up to 40ppm
+                - Fast scan speeds of up to 48ipm
+                - Combined paper input of 300 sheets
+                - Automatic 2-Sided Printing
+                - High-Yield Replacement Cartridges - Optional high yield 12,000 page toner cartridge
+                <div class="star"><p>&#9733;&#9733;&#9733;&#9733;&#9733;&#9734;</p></div>
+                <br>
+                <b>Was:<del> $430.00</del></b><br>
+                <h4>
+                Now: $399.99</h4>
+                Quantity<input type="number" min="1" max="1000" value="1"><br>
+                <a href=# onclick="addToCart()"><img src="../images/cart.png" alt="Add to cart"></a><br>
+                <button type="button">Buy now</button></b>
+            </div>
+        </div>
+            <!--product 12 -->
+            <div class="pricealign1">
+                <img src="../images/p17.jpg">
+                <div class="desc">
+                <span>Brother QL-800 P</span>
+                <h3> Touch Labeling Printer</h3><br>
+                High-resolution printing (up to 300 x 600 dpi)
+                Convenient, drop-in rolls. No ink or toner needed
+                <div class="star"><p>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;</p></div>
+                <br>
+                <b>Was:<del> $600.00</del></b><br>
+                <h4>
+                Now: $545.99</h4>
+                Quantity<input type="number" min="1" max="1000" value="1"><br>
+                <a href=# onclick="addToCart()"><img src="../images/cart.png" alt="Add to cart"></a><br>
+                <button type="button">Buy now</button></b>
+            </div>
+        </div>
+            <!--product 13 -->
+            <div class="pricealign1">
+                <img src="../images/p18.jpg">
+                <div class="desc">
+                <span>Epson M200</span>
+                <h3>Inkjet Printer</h3><br>High-yield pigment ink bottles
+                Copy and print speed up to 34 ppm (15 ipm)
+                Network connectivity
+                Epson iPrint
+                ADF and 2-line LCD screen
+                <div class="star"><p>&#9733;&#9733;&#9733;&#9733;;&#9733;;&#9733;</p></div>
+                <br>
+                <b>Was:<del> $560.00</del></b><br>
+                <h4>
+                Now: $499.99</h4>
+                Quantity<input type="number" min="1" max="1000" value="1"><br>
+                <a href=# onclick="addToCart()"><img src="../images/cart.png" alt="Add to cart"></a><br>
+                <button type="button">Buy now</button></b>
+            </div>
+        </div>
+            <!--product 14 -->
+            <div class="pricealign1">
+                <img src="../images/p19.jpg">
+                <div class="desc">
+                <span>Epson LQ-2090 II</span>
+                <h3>Dot Matrix Printer</h3><br>
+                -Fast print speed: USD speed of 550 characters/second at 10 characters per inch
+                -Increased reliability: Mean time between failure of 25,000 power-on hours
+                -Flexible printing: 24-pin, 136-column dot matrix printer
+                -Increased number of copies: Now original plus six copies
+                <div class="star"><p>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;</p></div>
+                <br>
+                <b>Was:<del> $666.00</del></b><br>
+                <h4>
+                Now: $599.99</h4>
+                Quantity<input type="number" min="1" max="1000" value="1"><br>
+                <a href=# onclick="addToCart()"><img src="../images/cart.png" alt="Add to cart"></a><br>
+                <button type="button">Buy now</button></b>
+            </div>
+        </div>
+            <!--product 15 -->
+            <div class="pricealign1">
+                <img src="../images/p20.jpg">
+                <div class="desc">
+                <span>Epson EcoTank Monochrome M2170</span>
+                <h3>All-in-One Wi-Fi Duplex InkTank Printer</h3><br>15 Paise cost per print (CPP)4 Compact integrated tank design
+                High-yield pigment ink bottle
+                Spill-free, error-free refilling
+                Print speed up to 39ppm (20ipm)
+                Print, scan, copy
+                <div class="star"><p>&#9733;&#9733;&#9733;&#9733;&#9733;&#9734;</p></div>
+                <br>
+                <b>Was:<del> $90.00</del></b><br>
+                <h4>
+                Now: $79.99</h4>
+                Quantity<input type="number" min="1" max="1000" value="1"><br>
+                <a href=# onclick="addToCart()"><img src="../images/cart.png" alt="Add to cart"></a><br>
+                <button type="button">Buy now</button></b>
+            </div>
+        </div>
+            <!--product 16 -->
+            <div class="pricealign1">
+                <img src="../images/p21.jpg">
+                <div class="desc">
+                <span>Brother ADS-3100 </span>
+                <h3>Desktop Document Scanner</h3><br>
+                - 60-sheet Automatic Document Feeder (ADF)
+                - 2-sided scanning up to 80ipm
+                - Optical character recognition (OCR)
+                - Connect and scan using USB 3.0 and USB host
+                <div class="star"><p>&#9733;&#9733;&#9733;&#9733;&#9734;&#9734;</p></div>
+                <br>
+                <b>Was:<del> $337.00</del></b><br>
+                <h4>
+                Now: $299.99</h4>
+                Quantity<input type="number" min="1" max="1000" value="1"><br>
+                <a href=# onclick="addToCart()"><img src="../images/cart.png" alt="Add to cart"></a><br>
+                <button type="button">Buy now</button></b>
+            </div>
+        </div>
+        </div>
+               <div class="proheading" ><h1 style="text-align: center; font-size: 40px;padding: 10px;margin: 0px;">Accessories and Replacement Parts</h1></div>
+         <div class="procontainer">
+            <!--product 17 -->
+            <div class="pricealign1">
+                <img src="../images/p9.jpg">
+                <div class="desc">
+                <span>xlab XTL</span>
+                <h3>Thermal Label Stickers Roll</h3><br>Contains 1000 Thermal Sticker Labels of 70mm X 20mm.
+                <div class="star"><p>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;</p></div>
+                <br>
+                <h4 style="font-size: 20px;">                            <!--use of inline css-->
+                $70</h4>
+                Quantity<input type="number" min="1" max="1000" value="1"><br>
+                <a href=# onclick="addToCart()"><img src="../images/cart.png" alt="Add to cart"></a><br>
+                <button type="button">Buy now</button></b>
+            </div>
+            </div>
+            <!--product 18 -->
+            <div class="pricealign1">
+                <img src="../images/p10.jpg">
+                <div class="desc">
+                <span>xlab XTL</span>
+                <h3>IDP Parts- Color Ribbon</h3><br>Print 2-sides: Color Front & Black Back.Includes built-in cleaning roller.
+                <div class="star"><p>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;</p></div>
+                <br>
+                <h4 style="font-size: 20px;">
+                $70</h4>
+                Quantity<input type="number" min="1" max="1000" value="1"><br>
+                <a href=# onclick="addToCart()"><img src="../images/cart.png" alt="Add to cart"></a><br>
+                <button type="button">Buy now</button></b>
+            </div>
+            </div>
+            <!--product 19 -->
+            <div class="pricealign1">
+                <img src="../images/p11.jpg">
+                <div class="desc">
+                <span>PrintTech</span>
+                <h3>IDP Parts- Black Ribbon</h3><br>Print clear text and readable barcodes. Easy Maintenance.
+                <div class="star"><p>&#9733;&#9733;&#9733;&#9733;&#9733;&#9733;</p></div>
+                <br>
+                <h4 style="font-size: 20px;">
+                $90</h4>
+                Quantity<input type="number" min="1" max="1000" value="1"><br>
+                <a href=# onclick="addToCart()"><img src="../images/cart.png" alt="Add to cart"></a><br>
+                <button type="button">Buy now</button></b>
+            </div>
+            </div>
+            <!--product 20 -->
+            <div class="pricealign1">
+                <img src="../images/p12.jpg">
+                <div class="desc">
+                <span>PrintTech</span>
+                <h3>IDP Parts- Cleaning Pen</h3><br>Routine cleanings with IDP cleaning pen kit to maintain quality and increase longevity of Printers
+                <div class="star"><p>&#9733;&#9733;&#9733;&#9733;&#9733;&#9734;</p></div>
+                <br>
+                <h4 style="font-size: 20px;">
+                $75</h4>
+                Quantity<input type="number" min="1" max="1000" value="1"><br>
+                <a href=# onclick="addToCart()"><img src="../images/cart.png" alt="Add to cart"></a><br>
+                <button type="button">Buy now</button></b>
+            </div>
+            </div>
+            <!--product 21 -->
+            <div class="pricealign1">
+                <img src="../images/p13.png">
+                <div class="desc">
+                <span>Brother</span>
+                <h3>Mono Laser Toner Cartridge</h3><br>Professional mono laser print quality you can consistently rely on for up to 3,000 pages.
+                <div class="star"><p>&#9733;&#9733;&#9733;&#9733;&#9734;&#9734;</p></div>
+                <br>
+                <h4 style="font-size: 20px;">
+                $70</h4>
+                Quantity<input type="number" min="1" max="1000" value="1"><br>
+                <a href=# onclick="addToCart()"><img src="../images/cart.png" alt="Add to cart"></a><br>
+                <button type="button">Buy now</button></b>
+            </div>
+        </div>
+
+
+            </div>
+        </div>
+    </section>
+   <!--Foter Section of the website--> 
+    <footer>
+            
+            <div class="footersecstyle">
+                <div class="footercolor">
+                    <h2>ZV 5 PRINTERS</h2>
+                </div>
+                <div class="footercolor2">
+                    <p class="footercolor2">Suscribe to our online media sources for reciving update to date updates and to know about our exciting offers and to be the first to know about it.<br><br>Get your value for money at ZV % PRINTERS</p>
+                </div>
+
+                                <div class="footercolor3">
+                    <div class="column">
+                        <h1>Products</h1>
+                        -Laser printer<br>
+                        -Inkjet printers<br>
+                        -Labeling printers<br>
+                        -All in one printers<br>
+                        -Handeheld printers<br>
+                        -Wireless printer<br>
+                    </div>
+
+                    <div class="column">    
+                        <h1>Brands</h1>
+                        -Apple<br>
+                        -Brother<br>
+                        -Hikvision<br>
+                        -Samsung<br>
+                        -LG<br>
+                    </div>
+
+                    <div class="column">
+                        <h1>Store Information</h1>
+                        -Putali sadak, Kathmandu,<br>
+                        -ZV5PRINTERS@gmail.com<br>
+                        -+977 9876543210 / 023-456789<br>
+                        -Sunday to Saturday: 9:00 AM to 6 PM<br>
+                    </div>
+                </div>
+
+                <div class="logofont">
+                    <a href="https://www.facebook.com/"><img src="../images/meta.png"></a><!--use of external link -->
+                    
+                    
+                    <a href="https://www.tiktok.com/login" ><img src="../images/tik.png"> </a><!--use of external link -->
+
+                    <a href="https://www.google.com/"><img src="../images/Google.png"> </a>
+
+                    <a href="https://twitter.com/?lang=en"><img src="../images/x.png"></a>
+
+                    <a href="https://www.whatsapp.com/"><img src="../images/whatsapp.png"> </a>
+
+                </div>
+
+                <div>
+                    <a href="https://play.google.com"><img src="../images/playstore.png"> </a><!--use of external link -->
+                </div>
+                
+                <div class="lastalign">
+                    <h1>By ZV 5 Printers and team</h1>
+
+                </div>
+            </div>
+        </footer>
+
+</body>
+<script>
+        function addToCart(){
+         // add logic here for handling the "Add to Cart" functionality,rn it pops up a alert message on selecting the add to cart
+         alert('Product added to cart!')
+        }
+    </script>  
+</html>

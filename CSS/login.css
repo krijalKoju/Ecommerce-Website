@@ -1,0 +1,72 @@
+/*use of external CSS for the design of login form that pops up from the homepage on clicking the "Log In button" */
+
+.{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "poppins", sans-serif;
+}
+.body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: url(../images/background1.jpg);  /*the image used a background in the login form */
+}
+.hello{
+	width: 420px;
+	background-color: transparent;
+	color: #fff;
+	padding: 30px 40px;
+
+}
+/*styling the font of the login page */
+.hello h1{
+	font-size: 36px;
+	text-align: center;
+}
+.hello .world {
+	width: 100%;
+	height: 50%;
+	background: black;
+	margin: 20px 0;
+
+}
+.world input{
+	width: 93%;
+	height: 60%;
+	border: none;
+	outline: none;
+	border: 2px solid rgb(255, 255, 255, .2);
+	border-radius: 40px;
+	font-size: 17px;
+
+}
+.forgot{
+	display: flex;
+	justify-content: space-between;
+	font-size: 14.5px;
+	margin: -2px 0 15px;
+
+
+}
+.forgot a{
+     color: #333;
+     text-decoration: none;
+
+}
+.forgot a:hover {
+	text-decoration: underline;
+}
+.click{
+	width: 97%;
+	height: 30px;
+	background-color: orange;
+	border: 1px solid;
+	outline: 1px solid;
+	border-radius: 45px;
+	margin: -2px 0 15px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+	font-size: 17px;
+	color: black;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login page</title>
+	<link rel="stylesheet" href="../CSS/Login.css"> <!--use of external css-->
+	<link rel="shortcut icon" href="../images/v.png">
+</head>
+<body>
+     <!--main form ,login sign up content-->
+	<section class="body">
+		<div class="hello">
+
+			<form id="signupForm" onsubmit="return validateForm()">
+				<h1>Login</h1>
+
+				<div class="world">
+					<label for ="email">Email</label><input type="Email"id="email" placeholder="User name">
+				</div>
+
+				<div class="world">
+					<label for="password">Password</label><input type="password" id="password" placeholder="password">
+					
+				</div>
+
+				<div class="forgot">
+					<label><input type="checkbox"> Remember me</label>
+					<a href="GroupWork.html" style="color: white;">Forgot password ?</a>
+				</div>
+
+				<button class="click" type="submit"> <a href="GroupWork.html" onclick="validateForm()">Log in</a></button><br> <!--on validation of the form, you return to homepage.-->
+
+				<button class="click" type="button"><a href="productpage.html">Let's go shoppin!</a></button>
+
+
+			</form>
+		</div>
+	</section>
+	<!--javascript/logic added to validate the signup Form-->
+	<script>
+		 function validateForm() {
+        var Email= document.forms["signupForm"]["email"].value; //declaring variable in the function
+        var Password= document.forms["signupForm"]["password"].value;
+        
+        if (Email=="" || Password =="" ){   //condition to validate the function
+            alert("Please fill all the fields.");
+            return false;
+        }
+        else{
+            alert("You have successfully logged in!")
+		return true;
+        }
+	}
+
+	</script>
+
+</body>
+</html>
